@@ -1,0 +1,14 @@
+{
+    "Övgü":  {
+        "name":"Övgü Komutu",
+        "type":"Komut",
+        "price":"200",
+        "desc":"Özel övgü komutu"
+    },
+    "Admin Rolü": {
+        "name":"Admin Rolü",
+        "type":"Rol",
+        "price":"5000",
+        "desc":"Bu Eşyayı alarak Admin rolü kazanmış olursunuz"
+    }
+}
