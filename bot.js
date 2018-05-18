@@ -137,7 +137,7 @@ client.on('message', message => {
     .addField("Şuanki seviyen:", curlvl + 1);
 
     //////message.channel.send(lvlup).then(msg => {msg.delete(5000)});
-  ////}
+}
   fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
     if(err) console.log(err)
   });
