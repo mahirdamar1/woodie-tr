@@ -12,7 +12,7 @@ const embed1 = new Discord.RichEmbed()
 		.setColor(0x00AE86)
 		.setThumbnail("https://cdn0.iconfinder.com/data/icons/cosmo-multimedia/40/terminal_application-512.png")
         .addField('**EĞLENCE KOMUTLARI**',`${prefix}help eğlence`, true)
-        .addField('**MÜZİK KOMUTLARI**',`${prefix}help müzik`, true)
+        ////.addField('**MÜZİK KOMUTLARI**',`${prefix}help müzik`, true)
         .addField('**YARDIMCI KOMUTLAR**', `${prefix}help yardımcı`, true)
         .addField('**MODERATÖR KOMUTLARI**',`${prefix}help moderatör`, true)
 		.addField('**SAHİP KOMUTLARI**',`${prefix}help sahip`, true)
@@ -80,7 +80,6 @@ if (mesaj === "yardımcı") {
 **-kullanıcıbilgim**:Komutu kullanan kişi hakkında bilgi verir.
 **-discrim**:Belirtilen Tag a sahip kişileri belirtir.
 **-kısalt**:Linkinizi kısaltır.
-**-level**:seviyenizi gösterir.
 **-report**:Kişiyi şikayet eder.
 **-hesapla**:Matematik işlemi yapar.
 **-lyrics**:Belirtilen müziğin lyricsini gönderir.
