@@ -43,8 +43,6 @@ message.channel.send(embed1);
 **-mesajdöndür**:Mesajınızı tersden yazar.
 **-eski**:Resmi eskitir.
 **-yaz**:İstediğiniz şeyi bota yazdırır.
-**-kaçcm**:Boyunu gösterir.
-**-sperm**:Sperm durumunuzu gösterir.
 **-pokemon**:Belirtilen pokemon hakkında bilgi verir.
 **-werebeaver**:Werebeaver The Beaver hakkında bilgi verir.
 **-woodie**:Woodie The Lumberjack hakkında bilgi verir.`)
