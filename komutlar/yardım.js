@@ -68,6 +68,7 @@ if (mesaj === "yardımcı") {
 **-öneri**:Botun sahiplerine önerilerinizi gönderir.
 **-avatar**:Kendi avatarımızı/Birinin avatarını görmenizi sağlar.
 **-bilgi**:Bot ile ilgili bilgi verir.
+**-reklam**:Bota reklam yaptırır.
 **-hesapla**:Belirtilen işlemi yapar.
 **-ara**:Google'de istediğnizi aratır.
 **-gif**:Mesajınızla ilgili gifleri Giphy'da aratır
