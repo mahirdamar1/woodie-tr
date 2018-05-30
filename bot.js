@@ -109,15 +109,16 @@ client.unload = command => {
 
 
 client.on('message', message => {
-			if(message.content.includes('abe')){
-			if (message.member.roles.find("name", "abe")) {
+	if(message.content.includes('abe')){
+		if (message.member.roles.find("name", "abe") || message.author.id === "331846231514939392") {
 			return;
 		} else {
 			message.delete()
 			message.reply('neden küfür ediyorsun')
 			message.guild.channels.find('name', 'uyarı').send(`${message.author} küfür ediyor. Hemen banla onu!`)
 		}
-		}
+	}
+
 
 
 	if (message.author.id === client.user.id) return;
