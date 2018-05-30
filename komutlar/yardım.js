@@ -44,6 +44,8 @@ message.channel.send(embed1);
 **-eski**:Resmi eskitir.
 **-yaz**:İstediğiniz şeyi bota yazdırır.
 **-pokemon**:Belirtilen pokemon hakkında bilgi verir.
+**-trump**:Mesajınızı illegal hale getirir.
+**-slots**:Slot oyunu oynar.
 **-werebeaver**:Werebeaver The Beaver hakkında bilgi verir.
 **-woodie**:Woodie The Lumberjack hakkında bilgi verir.`)
 message.channel.send(embed2);
