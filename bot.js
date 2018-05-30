@@ -115,7 +115,7 @@ client.on('message', message => {
 		} else {
 			message.delete()
 			message.reply('neden küfür ediyorsun')
-			message.guild.channels.find('name', 'uyarı').send(`${message.author.tag} küfür ediyor`)
+			message.guild.channels.find('name', 'uyarı').send(`${message.author} küfür ediyor. Hemen banla onu!`)
 		}
 		}
 
