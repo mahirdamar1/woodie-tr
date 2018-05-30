@@ -109,8 +109,10 @@ client.unload = command => {
 
 
 client.on('message', message => {
+	
+	//////////message.member.roles.find("name", "abe")
 	if(message.content.includes('abe')){
-		if (message.member.roles.find("name", "abe") || message.author.id === "331846231514939392") {
+		if (message.author.id === "449496747488837634" || message.author.id === "450930144337461248" || message.author.id === "331846231514939392") {
 			return;
 		} else {
 			message.delete()
