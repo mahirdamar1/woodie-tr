@@ -109,8 +109,8 @@ client.unload = command => {
 
 
 client.on('message', message => {
-	
-	//////////message.member.roles.find("name", "abe")
+	/**
+	message.member.roles.find("name", "abe")
 	if(message.content.includes('abe')){
 		
 		var kanal = message.guild.channels.find('name', 'uyarı')
@@ -134,7 +134,7 @@ client.on('message', message => {
 			kanal.send(heheytşeş)
 		}
 	}
-
+**/
 
 
 	if (message.author.id === client.user.id) return;
