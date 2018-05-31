@@ -112,15 +112,26 @@ client.on('message', message => {
 	
 	//////////message.member.roles.find("name", "abe")
 	if(message.content.includes('abe')){
-		if (message.author.id === "358299380182286336" || message.author.id === "449496747488837634" || message.author.id === "450930144337461248" || message.author.id === "331846231514939392") {
-			return;
-		} else {
-			var heheytşeş = new Discord.RichEmbed()
+		
+		var kanal = message.guild.channels.find('name', 'uyarı')
+		var heheytşeş = new Discord.RichEmbed()
 			.addField("Suçlu", `${message.author}`)
 			.addField("Mesajı", `${message.content}`)
+			
+		if (message.author.id === "358299380182286336" || message.author.id === "449496747488837634" || message.author.id === "450930144337461248" || message.author.id === "331846231514939392") {
+			
+			return;
+			
+		} else if (!kanal){
+
 			message.delete()
 			message.reply('neden küfür ediyorsun')
-			message.guild.channels.find('name', 'uyarı').send(heheytşeş)
+			message.guild.channels.find('name', 'xxwarningxx').send(heheytşeş)
+
+		}else {
+			message.delete()
+			message.reply('neden küfür ediyorsun')
+			kanal.send(heheytşeş)
 		}
 	}
 
