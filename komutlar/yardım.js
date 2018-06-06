@@ -58,7 +58,19 @@ if (mesaj === "müzik") {
 		.setTitle("**MÜZİK KOMUTLARI**")
 		.setColor(0x00AE86)
 		.setThumbnail("https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s900-mo-c-c0xffffffff-rj-k-no")
-		.setDescription(`Şuan bunu üzerinde çalışıyorum bu yüzden biraz beklemen lazım :3`)
+		.setDescription(`**-join**:Mesajı gönderenin kanalına katılır.
+**-leave**:Mesajı gönderenin kanalından ayrılır.
+**-add**:YouTube linki ile sıraya müzik ekler.
+**-queue**:Kuyruğu gösterir (9 adet).
+**-play**:Sıradaki müziği oynatır.
+
+:AŞAĞIDAKI KOMUTLAR YALNIZCA PLAY KOMUTU ÇALIŞIYORKEN ÇALIŞIR:
+
+**-pause**:Müziği duraklatır.
+**-resume**:Müziği sürdürür.
+**-skip**:Çalmakta olan şarkıyı atlar.
+**-volume+(+++)**:Ses şiddetini 2%/+ kadar arttırır.
+**-volume-(---)**:Ses şiddetini 2%/- kadar azaltır.`)
 	message.channel.send(embed3);
 }
 if (mesaj === "yardımcı") {
