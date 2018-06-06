@@ -16,7 +16,8 @@ const embed1 = new Discord.RichEmbed()
         .addField('**YARDIMCI KOMUTLAR**', `${prefix}help yardımcı`, true)
         .addField('**MODERATÖR KOMUTLARI**',`${prefix}help moderatör`, true)
 		.addField('**SAHİP KOMUTLARI**',`${prefix}help sahip`, true)
-		.addField('**GİZLİ MESAJ HARFLER**',`${prefix}help gizlimesaj`, true)
+		.addField('**MÜZİK**',`${prefix}help müzik`, true)
+		.addField('**GİZLİ MESAJ**',`${prefix}help gizlimesaj`, true)
 message.channel.send(embed1);
 }
 
