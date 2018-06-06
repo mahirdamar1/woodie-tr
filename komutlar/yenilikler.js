@@ -8,8 +8,7 @@ exports.run = function(client, message) {
     .setDescription("Yenilik her zaman iyidir")
     .setThumbnail("http://fantasyva.com/wp-content/uploads/2017/08/new-sign-ID-33314.png")
     .setColor(0x00AE86)
-    .addField('-trump:', `Mesajınızı illegal hale getirir (-trump <mesaj>)`)
-    .addField('-slots', "Slot oyunu oynar (-slots)")
+    .addField('Müzik komutları eklendi:', `-help müzik yazarak daha fazla bilgi edinin`)
     message.author.send(embed);
 
 };
