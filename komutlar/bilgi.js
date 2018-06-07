@@ -8,6 +8,7 @@ exports.run = (client, message) => {
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Barış Demirci');
+    .addField("Davet Linki", "https://is.gd/ybHl0c");
     return message.channel.send(pingozel)
 };
 
