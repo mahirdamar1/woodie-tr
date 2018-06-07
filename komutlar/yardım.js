@@ -81,7 +81,7 @@ if (mesaj === "yardımcı") {
 		.setThumbnail("https://www.acelerartech.com/wp-content/uploads/2017/01/Virtual-Assistant-single.png")
 		.setDescription(`**-altın**:Altın miktarınızı gösterir.
 **-öneri**:Botun sahiplerine önerilerinizi gönderir.
-**-davet**:Botun davet linkini gönderir.
+**-davet**:Botu sunucunuza davet etmeniz için davet linkini gönderir.
 **-avatar**:Kendi avatarımızı/Birinin avatarını görmenizi sağlar.
 **-bilgi**:Bot ile ilgili bilgi verir.
 **-reklam**:Bota reklam yaptırır.
