@@ -8,7 +8,8 @@ exports.run = function(client, message) {
     .setDescription("Yenilik her zaman iyidir")
     .setThumbnail("http://fantasyva.com/wp-content/uploads/2017/08/new-sign-ID-33314.png")
     .setColor(0x00AE86)
-    .addField('Müzik komutları eklendi:', `-help müzik yazarak daha fazla bilgi edinin`)
+    .addField('Seviye Atlamaya Ne Dersin!', `Artık yazdığınız mesajlar size xp olarak dönecek. Böylece ne kadar fazla mesaj yazarsanız o kadar level atlayacaksınız. Aman ha dikkat, boş yapmayın **ban**lanabilirsiniz (!).`)
+    .addField("**-level**:", "Seviyenizi ve ne kadar mesaj gönderdiğinizi gösterir.")
     message.author.send(embed);
 
 };
