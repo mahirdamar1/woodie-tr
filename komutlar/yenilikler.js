@@ -10,7 +10,7 @@ exports.run = function(client, message) {
     .setColor(0x00AE86)
     .addField('Seviye Atlamaya Ne Dersin!', `Artık yazdığınız mesajlar size xp olarak dönecek. Böylece ne kadar fazla mesaj yazarsanız o kadar level atlayacaksınız. Aman ha dikkat, boş yapmayın **ban**lanabilirsiniz (!).`)
     .addField("**-level**:", "Seviyenizi ve ne kadar mesaj gönderdiğinizi gösterir.")
-    message.author.send(embed);
+    message.channel.send(embed);
 
 };
 
