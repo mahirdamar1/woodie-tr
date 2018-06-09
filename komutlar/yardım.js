@@ -88,6 +88,7 @@ if (mesaj === "yardımcı") {
 **-hesapla**:Belirtilen işlemi yapar.
 **-ara**:Google'de istediğnizi aratır.
 **-gif**:Mesajınızla ilgili gifleri Giphy'da aratır
+**-ping**:Botun pingini gösterir.
 **-çeviri**:Mesajınızı istenen dile çevirir.
 **-songörülme**:Etiketlenen kişinin son görülme zamanını belirtir.
 **-hastebin**:Mesajınızı Hastebin'e yükler.
