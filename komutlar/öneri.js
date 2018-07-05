@@ -13,10 +13,12 @@ exports.run = function(client, message, args) {
         .setColor(0x00AE86)
         .setTimestamp()
         .addField('Eylem:', 'Öneri')
-        .addField('Kullanıcı:', message.author)
+        .addField('Kullanıcı:', message.author.id)
+        .addField('TAG:', message.author.tag)
         .addField('Önerisi:', öneri);
     
         client.guilds.get(guildID).channels.get(channelID).send(embed)
+        message.channel.send('Öneriniz alınmıştır, teşekkürler!');
     }
 
 
