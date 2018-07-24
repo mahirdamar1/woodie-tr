@@ -105,6 +105,16 @@ client.unload = command => {
   });
 };
 
+/////////////////////
+client.on("guildMemberAdd", member => {
+  
+const channel = member.guild.channels.find('name', 'giriş-çıkış');
+    if (!channel) return;
+     channel.send(member + ", Hoşgeldin Artık [TR]Danger Discord sunucusunda!");
+});
+
+ 
+/////////////////////////
 
 
 
