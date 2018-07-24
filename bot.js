@@ -110,7 +110,6 @@ client.on("guildMemberAdd", member => {
 	
 	let reportEmbed = new Discord.RichEmbed()
     	.setDescription(member.tag)
-    	.setColor(orange)
     	.addField(member.tag, `Artık [TR]Danger Discord sunucusunda!`)
 
   
