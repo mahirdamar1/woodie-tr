@@ -109,8 +109,9 @@ client.unload = command => {
 client.on("guildMemberAdd", member => {
 	
 	let reportEmbed = new Discord.RichEmbed()
-    	.setDescription(member.tag)
-    	.addField(member.tag, `Artık [TR]Danger Discord sunucusunda!`)
+    	.setDescription(member)
+    	.addField(member, `Artık [TR]Danger Discord sunucusunda!`)
+	.setThumbnail(member.avatarURL)
 
   
 const channel = member.guild.channels.find('name', 'giriş-çıkış');
