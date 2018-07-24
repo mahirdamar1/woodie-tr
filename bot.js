@@ -107,10 +107,16 @@ client.unload = command => {
 
 /////////////////////
 client.on("guildMemberAdd", member => {
+	
+	let reportEmbed = new Discord.RichEmbed()
+    	.setDescription(member.tag)
+    	.setColor(orange)
+    	.addField(member.tag, `Artık [TR]Danger Discord sunucusunda!`)
+
   
 const channel = member.guild.channels.find('name', 'giriş-çıkış');
     if (!channel) return;
-     channel.send(member + ", Hoşgeldin Artık [TR]Danger Discord sunucusunda!");
+     channel.send(reportEmbed);
 });
 
  
