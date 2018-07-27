@@ -112,7 +112,7 @@ client.on("message", msg => {
     msg.delete(30).then(deletedMsg => {
      deletedMsg.channel.send({embed: {
      color: Math.floor(Math.random() * (0xFFFFFF + 1)),
-     description: (`${msg.author} :crown: Woodie reklam koruması aktif.`)
+     description: (`${msg.author} :crown: Woodie reklam koruması aktif, lütfen reklam yapmayı bırak evlat!`)
     }}).catch(e => {
             console.error(e);
           });
