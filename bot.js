@@ -106,7 +106,7 @@ client.unload = command => {
 };
 
 client.on("message", msg => {
-	if (message.member.hasPermission("BAN_MEMBERS")) {
+	if (msg.member.hasPermission("ADMINISTRATOR")) {
 		return;
 	}else if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && !msg.author.bot && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
     msg.delete(30).then(deletedMsg => {
