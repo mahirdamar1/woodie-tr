@@ -107,14 +107,18 @@ client.unload = command => {
 
 
 client.on("message", msg => {
+const embedlulz = new Discord.RichEmbed()
+	.setTitle("Sunucunda " + msg.author.tag + " reklam yapıyor!")
+      .setColor(0x00AE86)
+      .setDescription("-warn <kişi> komutu ile onu uyarabilir ya da -kick <kişi> veya -ban <kişi> komutlarını kullanarak onu sunucudan uzaklaştırabilirsin!")
+	        .addField("Kullanıcının mesajı:", msg.content)
 if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
-
 	if(msg.member.hasPermission('BAN_MEMBERS')){
 	return;
 	} else {
     msg.delete(30).then(deletedMsg => {
-     deletedMsg.channel.send(":crown: " + msg.author + " Reklam koruması aktif, reklam yapmayı bırak evlat!:crown:")
-	 msg.guild.owner.send(msg.guild.owner + "Merhaba seni uyarmam gerekiyor. Sunucunda " + msg.author.tag + " reklam yapıyor! -warn <kişi> komutu ile onu uyarabilir ya da -kick <kişi> veya -ban <kişi> komutlarını kullanarak onu sunucudan uzaklaştırabilirsin! Kullanıcının mesajı: " + msg.content).catch(e => {
+     deletedMsg.channel.send(":crown: " + msg.author + " Woodie reklam koruması aktif, reklam yapmayı bırak evlat!:crown:")
+	 msg.guild.owner.send(embedlulz).catch(e => {
             console.error(e);
           });
         }).catch(e => {
