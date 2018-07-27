@@ -110,17 +110,14 @@ client.on("message", msg => {
 		return;
 	}else if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && !msg.author.bot && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
     msg.delete(30).then(deletedMsg => {
-     deletedMsg.channel.send({embed: {
-     color: Math.floor(Math.random() * (0xFFFFFF + 1)),
-     description: (`${msg.author} :crown: Woodie reklam koruması aktif, lütfen reklam yapmayı bırak evlat!`)
-    }}).catch(e => {
+     deletedMsg.channel.send(:crown: Reklam koruması aktif, reklam yapmayı bırak evlat!:crown:)
+	 msg.guild.owner.send(msg.guild.owner + "Merhaba seni uyarmam gerekiyor. Sunucunda " + msg.author.tag + " reklam yapıyor!").catch(e => {
             console.error(e);
           });
         }).catch(e => {
           console.error(e);
         });
       };
-	msg.guild.owner.send(msg.guild.owner + "Merhaba seni uyarmam gerekiyor. Sunucunda " + msg.author.tag + " reklam yapıyor!")
     })
 
 
