@@ -111,7 +111,7 @@ const embedlulz = new Discord.RichEmbed()
 	.setTitle("Sunucunda " + msg.author.tag + " reklam yapıyor!")
       .setColor(0x00AE86)
       .setDescription("-warn <kişi> komutu ile onu uyarabilir ya da -kick <kişi> veya -ban <kişi> komutlarını kullanarak onu sunucudan uzaklaştırabilirsin!")
-	.addField("Kullanıcının mesajı:", "Kullanıcının Mesajı: " + msg.content)
+	.addField("Kullanıcının mesajı:", "**" + msg.content + "**")
 
 if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
 	if(msg.member.hasPermission('BAN_MEMBERS')){
