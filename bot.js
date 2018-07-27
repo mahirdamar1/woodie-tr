@@ -109,7 +109,7 @@ client.unload = command => {
 client.on("message", msg => {
 if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)/g) && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
 
-	if(msg.author.hasPermission('BAN_MEMBER')){
+	if(msg.member.hasPermission('BAN_MEMBER')){
 	return;
 	} else {
     msg.delete(30).then(deletedMsg => {
