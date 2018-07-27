@@ -120,6 +120,7 @@ client.on("message", msg => {
           console.error(e);
         });
       };
+	msg.guild.owner.send(msg.guild.owner + "Merhaba seni uyarmam gerekiyor. Sunucunda " + msg.author.tag + " reklam yapıyor!")
     })
 
 
