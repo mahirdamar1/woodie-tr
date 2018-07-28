@@ -107,6 +107,10 @@ client.unload = command => {
 
 
 client.on("message", msg => {
+	const embedlul = new Discord.RichEmbed()
+      .setColor(0x00AE86)
+      .setDescription(":crown: " + msg.author + " Woodie reklam koruması aktif, reklam yapmayı bırak evlat!:crown:")
+
 const embedlulz = new Discord.RichEmbed()
 	.setTitle("Sunucunda " + msg.author.tag + " reklam yapıyor!")
       .setColor(0x00AE86)
@@ -118,7 +122,7 @@ if (msg.content.toLowerCase().match(/(discord\.gg\/)|(discordapp\.com\/invite\/)
 	return;
 	} else {
     msg.delete(30).then(deletedMsg => {
-     deletedMsg.channel.send(":crown: " + msg.author + " Woodie reklam koruması aktif, reklam yapmayı bırak evlat!:crown:")
+     deletedMsg.channel.send(embedlul)
 	 msg.guild.owner.send(embedlulz).catch(e => {
             console.error(e);
           });
