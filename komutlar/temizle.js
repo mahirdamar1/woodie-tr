@@ -8,7 +8,8 @@ exports.run = function(client, message, args) {
   if (!mesajsayisi) return message.channel.send('Kaç mesaj silmem gerektiğini belirtmedin.')
   if (mesajsayisi > 100) return message.channel.send('100 adetden fazla mesaj silemem!');
   message.channel.bulkDelete(mesajsayisi);
-  message.channel.send(mesajsayisi +' adet mesaj sildim!').then(msg => {msg.delete(5000)});
+  
+  message.channel.send("**Fısfıs** *" + mesajsayisi + "* **tane yazı temizledi ^^**").then(msg => {msg.delete(5000)});
 };
 
 exports.conf = {
@@ -19,7 +20,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'temizle',
+  name: 'fısfıs',
   description: 'Belirlenen miktar mesajı siler.',
-  usage: 'temizle <temizlenecek mesaj sayısı>'
+  usage: 'fısfıs <temizlenecek mesaj sayısı>'
 };
