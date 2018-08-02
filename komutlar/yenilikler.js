@@ -8,19 +8,8 @@ exports.run = function(client, message) {
     .setDescription("Yenilik her zaman iyidir")
     .setThumbnail("http://fantasyva.com/wp-content/uploads/2017/08/new-sign-ID-33314.png")
     .setColor(0x00AE86)
-    .addField('Müzik komutları eklendi: ', `Artık botumuzla müzik dinleyebileceksiniz ^^.`)
-    .addField("Müzik Komutları: ", "-help müzik")
-    .setDescription(`**-join**:Mesajı gönderenin kanalına katılır.
-**-leave**:Mesajı gönderenin kanalından ayrılır.
-**-add**: Link/Şarkı adı ile sıraya şarkı ekler.
-**-queue**:Kuyruğu gösterir.
-**-play**:Sıradaki şarkıyı oynatır.
-:AŞAĞIDAKI KOMUTLAR YALNIZCA PLAY KOMUTU ÇALIŞIYORKEN ÇALIŞIR:
-**-pause**:Müziği duraklatır.
-**-resume**:Müziği sürdürür.
-**-skip**:Çalmakta olan şarkıyı atlar.
-**-volume+(+++)**:Ses şiddetini 2%/+ kadar arttırır.
-**-volume-(---)**:Ses şiddetini 2%/- kadar azaltır.`)
+    .addField("Tic-Tac-Toe (xox) Oyunu Eklendi: ", "Artık botumuz aracılığı ile bir arkadaşınızla xox oyunu oynayabileceksiniz -help xox")
+    .setDescription("-tictactoe <@kullanıcı_id> ile arkadaşınız ve sizin arnızda bir oyun başlatın, sıra size gelince -işaretle <satır> <sıra> komutu ile bir işaretleme yap! Sıra ve satırların koordinatları 0 ile 2 arasındadır örnek: -işaretle 0 0 veya -işaretle 2 2")
     message.channel.send(embed);
 
 };
