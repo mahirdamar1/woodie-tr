@@ -17,6 +17,7 @@ const embed1 = new Discord.RichEmbed()
         .addField('**MODERATÖR KOMUTLARI**',`${prefix}help moderatör`, true)
 		.addField('**SAHİP KOMUTLARI**',`${prefix}help sahip`, true)
 		.addField('**MÜZİK**',`${prefix}help müzik`, true)
+		.addField('**TİC-TAC-TOE**',`${prefix}help xox`, true)
 		.addField('**GİZLİ MESAJ**',`${prefix}help gizlimesaj`, true)
 message.channel.send(embed1);
 }
@@ -135,6 +136,17 @@ if (mesaj === "sahip") {
 **-unload**:İstediğiniz bir komutu devre dışı bırakır.
 `)
 	message.channel.send(embed6);
+}
+	
+	//xox
+	if (mesaj === "xox") {
+	////sahip
+		const embed8 = new Discord.RichEmbed()
+		.setTitle("**TİC-TAC-TOE YARDIM**")
+		.setColor(0x00AE86)
+		.setThumbnail("https://media.istockphoto.com/vectors/tictactoe-vector-id475790750?k=6&m=475790750&s=612x612&w=0&h=Vx_ldNecC683x05bt9j5er9yQfmI0cP_FC_y9HVLEnU=")
+		.setDescription(`-tictactoe <@kullanıcı_id> ile arkadaşınız ve sizin arnızda bir oyun başlatın, sıra size gelince -işaretle <satır> <sıra> komutu ile bir işaretleme yap! Sıra ve satırların koordinatları 0 ile 2 arasındadır örnek: -işaretle 0 0 veya -işaretle 2 2`)
+	message.channel.send(embed8);
 }
 	//gizlimesaj
 	 if (mesaj === "gizlimesaj") {
