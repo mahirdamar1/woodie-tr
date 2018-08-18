@@ -129,7 +129,7 @@ if (mesaj === "moderatör") {
 		.setTitle("**RPG (MOB) HAKKINDA BİLGİ**")
 		.setColor(0x00AE86)
 		.setThumbnail("https://steamuserimages-a.akamaihd.net/ugc/913541710196799040/91C40AB087E1A62E19132E361168F66561DDEEEE/")
-		.setDescription(`-başla Komutu ile moblarımızla savaşa başlayabilirsiniz! Kullanabileceğiniz saldırılar: saldır, ateştopu, can, em. Şuanda sadece eğlence amaçlıdır gelecekte para sistemiyle paranızı ikiye katlayabileceksiniz!`)
+		.setDescription(`-başla Komutu ile moblarımızla savaşa başlayabilirsiniz! Kullanabileceğiniz saldırılar: saldır, ateştopu, can, em. -bitir Komutuyla savaşı bitirebilirsiniz (doğal olarak kaybedersiniz). Şuanda sadece eğlence amaçlıdır gelecekte para sistemiyle paranızı ikiye katlayabileceksiniz!`)
 	message.channel.send(embedlul);
 }
 	
