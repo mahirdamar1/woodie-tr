@@ -18,6 +18,7 @@ const embed1 = new Discord.RichEmbed()
 		.addField('**SAHİP KOMUTLARI**',`${prefix}help sahip`, true)
 		.addField('**MÜZİK**',`${prefix}help müzik`, true)
 		.addField('**TİC-TAC-TOE**',`${prefix}help xox`, true)
+		.addField('**RPG (MOB)**',`${prefix}help rpg`, true)
 		.addField('**GİZLİ MESAJ**',`${prefix}help gizlimesaj`, true)
 message.channel.send(embed1);
 }
@@ -121,6 +122,18 @@ if (mesaj === "moderatör") {
 **-uyar**:İstediğiniz kişiyi uyarır.`)
 	message.channel.send(embed5);
 }
+	
+	if (mesaj === "rpg") {
+	////rpg
+	const embedlul = new Discord.RichEmbed()
+		.setTitle("**RPG (MOB) HAKKINDA BİLGİ**")
+		.setColor(0x00AE86)
+		.setThumbnail("https://steamuserimages-a.akamaihd.net/ugc/913541710196799040/91C40AB087E1A62E19132E361168F66561DDEEEE/")
+		.setDescription(`-başla Komutu ile moblarımızla savaşa başlayabilirsiniz! Kullanabileceğiniz saldırılar: saldır, ateştopu, can, em. Şuanda sadece eğlence amaçlıdır gelecekte para sistemiyle paranızı ikiye katlayabileceksiniz!`)
+	message.channel.send(embedlul);
+}
+	
+	
 if (mesaj === "sahip") {
 	////sahip
 		const embed6 = new Discord.RichEmbed()
