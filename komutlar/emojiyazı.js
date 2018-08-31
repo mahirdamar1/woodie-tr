@@ -1,12 +1,4 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const ayarlar = require('../ayarlar.json');
-const randomizeCase = word => word.split('').map(c => Math.random() > 0.5 ? c.toUpperCase() : c.toLowerCase()).join('');
-
-var prefix = ayarlar.prefix;
-
-
-
+﻿const Discord = require('discord.js');
 
 const mapping = {
     ' ': '   ',
@@ -27,31 +19,27 @@ const mapping = {
 };
 
 'abcdefghijklmnopqrstuvwxyz'.split('').forEach(c => {
-    mapping[c] = mapping[c.toUpperCase()] = ` :regional_indicator_${c}:`;
+	mapping[c] = mapping[c.toUpperCase()] = `:regional_indicator_${c}:`;
 });
 
-exports.run = (bot, msg, args) => {
-    if (args.length < 1) {
-        throw '**Bir mesaj belirt**';
-    }
 
-    msg.channel.send(
-        args.join(' ')
-            .split('')
-            .map(c => mapping[c] || c)
-            .join('')
-    );
+exports.run = function(client, message, args) {
+
+	if (args.length < 1) return message.reply('Lütfen bir mesaj belirt. **Doğru Kullanım**: ?emojiyazı <mesaj>')
+		
+	message.channel.send(args.join(' ').split('').map(c => mapping[c] || c).join(' '));
+
 };
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
+  enabled: true, 
+  guildOnly: true, 
   aliases: [],
-  permLevel: 0
+  permLevel: 0 
 };
 
 exports.help = {
-  name: 'emojiyazı',
-  description: 'Mesajınızı emojiye çevirir.',
+  name: 'emojiyazı', 
+  description: 'Mesajınızı emoji haline getirir',
   usage: 'emojiyazı <mesaj>'
 };

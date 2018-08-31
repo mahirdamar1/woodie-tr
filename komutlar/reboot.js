@@ -1,8 +1,7 @@
 const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
-	
-    message.channel.send(`Ben hemen bi gideyim sonra gelirim...`).then(msg => {
+    message.channel.sendMessage(`Bot yeniden başlatılıyor...`).then(msg => {
     console.log(`BOT: Bot yeniden başlatılıyor...`);
     process.exit(0);
   })

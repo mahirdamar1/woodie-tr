@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
   .setTimestamp()
   .setAuthor(message.author.username, message.author.avatarURL)
   .addField(':warning: Uyarı :warning:', '`sustur` adlı komutu özel mesajlarda kullanamazsın.')
-  return message.author.send(ozelmesajuyari); }
+  return message.author.sendEmbed(ozelmesajuyari); }
   let guild = message.guild
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
@@ -29,11 +29,11 @@ exports.run = (client, message, args) => {
 
   if (message.guild.member(user).roles.has(muteRole.id)) {
     message.guild.member(user).removeRole(muteRole).then(() => {
-      guild.channels.get(modlog.id).send(embed).catch(console.error);
+      guild.channels.get(modlog.id).sendEmbed(embed).catch(console.error);
     });
   } else {
     message.guild.member(user).addRole(muteRole).then(() => {
-      guild.channels.get(modlog.id).send(embed).catch(console.error);
+      guild.channels.get(modlog.id).sendEmbed(embed).catch(console.error);
     });
   }
 

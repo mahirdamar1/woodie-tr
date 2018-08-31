@@ -1,23 +1,20 @@
-const Discord = require('discord.js');
+﻿const Discord = require('discord.js');
 
-exports.run = (client, message) => {
 
-  const embed = new Discord.RichEmbed()
-    .setThumbnail("https://nest.com/support/images/misc-assets-icons/wi-fi-connection-issues.png")
-    .setDescription("Pingim " + client.ping + "ms!")
-  message.channel.send(embed)
-  
+exports.run = function(client, message) {
+
+    message.channel.send("Pingim **" + client.ping + "** ms!");
 };
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
+  enabled: true, 
+  guildOnly: true, 
+  aliases: ['p'],
+  permLevel: 0 
 };
 
 exports.help = {
-  name: 'ping',
-  description: 'Botun pingini gösterir.',
+  name: 'ping', 
+  description: 'Botun pingini gösterir',
   usage: 'ping'
 };

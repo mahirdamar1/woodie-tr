@@ -3,13 +3,18 @@ const client = new Discord.Client();
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message) => {
-	const pingozel = new Discord.RichEmbed()
+  if (message.channel.type !== 'dm') {
+    const ozelmesajkontrol = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Bot sürümü: v' + ayarlar.surum + ' Yapımcı: Barış Demirci')
-    .addField("Davet Linki", "https://is.gd/ybHl0c");
-    return message.channel.send(pingozel)
+    .setDescription('Özel Mesajlarına Bilgi Mesajımı Attım! :postbox: ');
+    message.channel.sendEmbed(ozelmesajkontrol) }
+	const pingozel = new Discord.RichEmbed()
+    .setColor(0x00AE86)
+    .setAuthor(message.author.username, message.author.avatarURL)
+    .setDescription('**Bu bot spyer#8131 ve neVoe#8146 tarafından desturlanmıştır**');
+    return message.author.sendEmbed(pingozel)
 };
 
 exports.conf = {

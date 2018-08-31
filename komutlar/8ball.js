@@ -1,35 +1,33 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const ayarlar = require('../ayarlar.json');
-const economy = require('discord-eco');
+﻿const Discord = require('discord.js');
 
-var prefix = ayarlar.prefix;
-
-var fortunes = [
-  "evet",
-  "hayır",
-  "belki",
-  "olabilir",
-  "olmayabilir",
-  "daha sonra tekrar sor"
+const cevaplar = [
+    "evet",
+    "hayır",
+    "belki",
+    "olabilir",
+    "bu ne salak salak sorular ya kaç yaşındasın sen",
+    "imkansız"
 ];
 
-exports.run = (client, message) => {
-  var args = message.content.substring(prefix.length).split(" ");
-  if (args[1]) message.channel.sendMessage("**" + fortunes[Math.floor(Math.random() * fortunes.length)] + "**");
-  else message.channel.sendMessage('**Bir soru belirt!**');
-  
-};
+exports.run = function(client, message, args) {
+    var soru = args.join(' ');
+
+    var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)];
+
+    if(!soru) return message.reply('Bir soru belirt. **Doğru Kullanım**: ?8ball <soru>')
+    else message.channel.send(cevap)
+
+};  
 
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
+  enabled: true, 
+  guildOnly: true, 
   aliases: [],
-  permLevel: 0
+  permLevel: 0 
 };
 
 exports.help = {
-  name: '8ball',
-  description: 'Sihirli 8ball sorduğunuz soruyu cevaplar.',
+  name: '8ball', 
+  description: 'Sihirli 8ball sorularınızı cevaplar',
   usage: '8ball <soru>'
 };

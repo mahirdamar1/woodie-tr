@@ -1,5 +1,4 @@
 exports.run = (client, message, args) => {
-
   let command;
   if (client.commands.has(args[0])) {
     command = args[0];
@@ -7,9 +6,9 @@ exports.run = (client, message, args) => {
     command = client.aliases.get(args[0]);
   }
   if (!command) {
-    return message.channel.send("`" + args[0] + "` adında bir komut yok.");
+    return message.channel.sendMessage("`" + args[0] + "` adında bir komut yok.");
   } else {
-    message.channel.send("`" + command + "` adlı komut yeniden başlatılıyor...")
+    message.channel.sendMessage("`" + command + "` adlı komut yeniden başlatılıyor...")
       .then(m => {
         client.reload(command)
           .then(() => {
