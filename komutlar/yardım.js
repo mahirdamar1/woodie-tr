@@ -47,7 +47,6 @@ message.channel.send(embed1);
 **-eski**:Resmi eskitir.
 **-yaz**:İstediğiniz şeyi bota yazdırır.
 **-pokemon**:Belirtilen pokemon hakkında bilgi verir.
-**-trump**:Mesajınızı illegal hale getirir.
 **-slots**:Slot oyunu oynar.
 **-werebeaver**:Werebeaver The Beaver hakkında bilgi verir.
 **-woodie**:Woodie The Lumberjack hakkında bilgi verir.`)
@@ -93,7 +92,6 @@ if (mesaj === "yardımcı") {
 **-ping**:Botun pingini gösterir.
 **-çeviri**:Mesajınızı istenen dile çevirir.
 **-songörülme**:Etiketlenen kişinin son görülme zamanını belirtir.
-**-hastebin**:Mesajınızı Hastebin'e yükler.
 **-hava**:İstediğiniz bölgenin hava durumunu gösterir.
 **-istatistik**:Botun istatistik gösterir.
 **-kullanıcıbilgim**:Komutu kullanan kişi hakkında bilgi verir.
