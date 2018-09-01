@@ -59,7 +59,7 @@ if (mesaj === "müzik") {
 		.setTitle("**MÜZİK KOMUTLARI**")
 		.setColor(0x00AE86)
 		.setThumbnail("https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s900-mo-c-c0xffffffff-rj-k-no")
-		.setDescription(`**-join**:Mesajı gönderenin kanalına katılır.
+		.setDescription(
 **-çal**:Şarkı çalar.
 :AŞAĞIDAKI KOMUTLAR YALNIZCA PLAY KOMUTU ÇALIŞIYORKEN ÇALIŞIR:
 **-dur**:Müziği duraklatır.
