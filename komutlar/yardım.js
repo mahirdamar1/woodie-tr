@@ -57,14 +57,12 @@ if (mesaj === "müzik") {
 	////müzik
 	const embed3 = new Discord.RichEmbed()
 		.setTitle("**MÜZİK KOMUTLARI**")
-
-    .addField("`" + prefix +"çal`", "Müzik çalar")
-    .addField("`" + prefix +"dur`", "Çalan müziği durdurur")
-    .addField("`" + prefix +"kuyruk`", "Müzik kuyruğunu gösterir")
-    .addField("`" + prefix +"geç`", "Bir sonraki müziği çalar")
-    .addField("`" + prefix +"ses`", "Müziğin sesini ayarlar")
-    .addField("`" + prefix +"devam`", "Durdurulan müziği devam ettirilir")
-    .setFooter("Müzik Komutları | Tüm Hakları spyer#8131 ye aittir.").`)
+**-çal**:Şarkı açar,çalar.
+**-kuyruk**:Kuyruğu gösterir.
+**-dur**:Müziği duraklatır.
+**-devam**:Müziği sürdürür.
+**-geç**:Çalmakta olan şarkıyı atlar.
+**-ses-(---)**:sesi ayarlar önerilern %5 .`)
 	message.channel.send(embed3);
 }
 if (mesaj === "yardımcı") {
