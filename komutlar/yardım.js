@@ -57,12 +57,16 @@ if (mesaj === "müzik") {
 	////müzik
 	const embed3 = new Discord.RichEmbed()
 		.setTitle("**MÜZİK KOMUTLARI**")
-**-çal**:Şarkı açar,çalar.
-**-kuyruk**:Kuyruğu gösterir.
+		.setColor(0x00AE86)
+		.setThumbnail("https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s900-mo-c-c0xffffffff-rj-k-no")
+		.setDescription(`**-join**:Mesajı gönderenin kanalına katılır.
+**-çal**:Şarkı çalar.
+:AŞAĞIDAKI KOMUTLAR YALNIZCA PLAY KOMUTU ÇALIŞIYORKEN ÇALIŞIR:
 **-dur**:Müziği duraklatır.
 **-devam**:Müziği sürdürür.
 **-geç**:Çalmakta olan şarkıyı atlar.
-**-ses-(---)**:sesi ayarlar önerilern %5 .`)
+**-ses**:Ses seviyesi Önerilen 5.
+**-kuyruk**:Kuyruğu gösterir.`)
 	message.channel.send(embed3);
 }
 if (mesaj === "yardımcı") {
