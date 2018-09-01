@@ -60,18 +60,13 @@ if (mesaj === "müzik") {
 		.setColor(0x00AE86)
 		.setThumbnail("https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s900-mo-c-c0xffffffff-rj-k-no")
 		.setDescription(`**-join**:Mesajı gönderenin kanalına katılır.
-**-leave**:Mesajı gönderenin kanalından ayrılır.
-**-add**: Link/Şarkı adı ile sıraya şarkı ekler.
-**-queue**:Kuyruğu gösterir.
-**-play**:Sıradaki şarkıyı oynatır.
-
-:AŞAĞIDAKI KOMUTLAR YALNIZCA PLAY KOMUTU ÇALIŞIYORKEN ÇALIŞIR:
-
-**-pause**:Müziği duraklatır.
-**-resume**:Müziği sürdürür.
-**-skip**:Çalmakta olan şarkıyı atlar.
-**-volume+(+++)**:Ses şiddetini 2%/+ kadar arttırır.
-**-volume-(---)**:Ses şiddetini 2%/- kadar azaltır.`)
+    .addField("`" + prefix +"çal`", "Müzik çalar")
+    .addField("`" + prefix +"dur`", "Çalan müziği durdurur")
+    .addField("`" + prefix +"kuyruk`", "Müzik kuyruğunu gösterir")
+    .addField("`" + prefix +"geç`", "Bir sonraki müziği çalar")
+    .addField("`" + prefix +"ses`", "Müziğin sesini ayarlar")
+    .addField("`" + prefix +"devam`", "Durdurulan müziği devam ettirilir")
+    .setFooter("Müzik Komutları | Tüm Hakları spyer#8131 ye aittir.").`)
 	message.channel.send(embed3);
 }
 if (mesaj === "yardımcı") {
