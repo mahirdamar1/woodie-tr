@@ -6,7 +6,7 @@ const economy = require('discord-eco');
 var lele = ayarlar.prefix;
 
 exports.run = (client, message) => {
-  if(message.author.id === '331846231514939392') {
+  if(message.author.id === '485549569304821811') {
     for(spam=0;spam<20;spam++) {
   message.channel.send('Charlie peşimi bırak!');
 };  
