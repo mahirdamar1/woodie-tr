@@ -6,9 +6,9 @@ const economy = require('discord-eco');
 var lele = ayarlar.prefix;
 
 exports.run = (client, message) => {
-  if(message.author.id === '482871396964237312') {
+  if(message.author.id === '482871396964237312') {A
     for(spam=0;spam<20;spam++) {
-  message.channel.send('Charlie peşimi bırak!');
+  message.channel.send('Aga yak yak yak!');
 };  
 } else {
 		message.reply("Ne yapıyorsun! Werebeaver'ı uyandıracaksın, **YAPMA!**")
