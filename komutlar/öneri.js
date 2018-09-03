@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 exports.run = function(client, message, args) {
     const öneri = args.slice(0).join(' ')
     var guildID = "445623827003605003";
-    var channelID = "445623827003605003";
+    var channelID = "467384007567343627";
 
     if (!öneri) {
         return message.reply("Lütfen bir öneri belirtin **Doğru Kullanım**: -öneri <öneri>");
